@@ -1,0 +1,140 @@
+.uploadBox{
+    max-width:650px;
+    margin:auto;
+    padding:35px;
+    border:2px dashed #2E7D32;
+    border-radius:18px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.uploadInput{
+    display:none;
+}
+
+.uploadLabel{
+    display:inline-block;
+    background:#2E7D32;
+    color:white;
+    padding:14px 30px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.uploadLabel:hover{
+    background:#1B5E20;
+}
+
+.uploadBox:hover{
+    border-color:#2E7D32;
+}
+
+.preview{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:16px;
+    border:2px solid #ddd;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.imageActions{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.removeBtn{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#d32f2f;
+    color:white;
+    cursor:pointer;
+}
+
+.removeBtn:hover{
+    background:#b71c1c;
+}
+
+.identifyBtn{
+    width:250px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#2E7D32,#43A047);
+    color:white;
+    cursor:pointer;
+}
+
+.identifyBtn:hover{
+    background:#1B5E20;
+    transform:translateY(-2px);
+}
+
+.identifyBtn:disabled{
+    background:gray;
+    cursor:not-allowed;
+}
+
+.hint{
+    color:#666;
+    margin-top:-15px;
+    margin-bottom:10px;
+}
+
+.imageInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.imageInfo h3{
+    color:#2E7D32;
+}
+
+.imageInfo p{
+    color:#666;
+}
+
+.changeBtn{
+    background:#444;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.changeBtn:hover {
+    opacity: 0.8;
+}
+
+@media(max-width:768px){
+    .uploadBox{
+        padding:20px;
+    }
+
+    .preview{
+    width:100%;
+    height:260px;
+    }
+
+    .identifyBtn{
+    width:100%;
+    }
+
+    .uploadLabel{
+    width:100%;
+    text-align:center;
+    }
+}
