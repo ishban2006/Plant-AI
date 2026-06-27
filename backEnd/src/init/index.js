@@ -21,7 +21,7 @@ main().catch((err) => {
 const initDB = async () => {
     const plants = pData.data.map((plant, index) => ({
         ...plant,
-        number: index,
+        number: index + 520,
     }));
 
     await Plant.insertMany(plants);
