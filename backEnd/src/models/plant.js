@@ -4,20 +4,14 @@ const {model} = require("mongoose");
 const plantSchema = new Schema({
     number: {
         type: Number,
-        required: true,
         unique: true,
     },
-    common_name:String,
-    botanical_name:String,
-    medicinal_benefits : [
-        {
-            benefit : String,
-        }
-    ],
+    common: String,
+    bota: String,
+    medB : [String],
     family: String,
 })
 
+const Plant = new model("Plant", plantSchema);
 
-const plant = new model("plant", plantSchema);
-
-module.exports = {plant};
+module.exports = Plant;
