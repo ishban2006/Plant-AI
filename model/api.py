@@ -7,7 +7,7 @@ import io
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    load_model("weights/iris.pt")  # loads once at startup
+    load_model("checkpoint.pt")  # loads once at startup
     yield
 
 app = FastAPI(lifespan=lifespan)
