@@ -3299,6 +3299,606 @@ const plantData = [
   ],
   family: "Rosaceae"
 },
+{
+  common: "Alpine Lettuce",
+  bota: "Lactuca plumieri",
+  medB: [
+    "Traditionally used as a mild sedative.",
+    "Used in folk medicine to relieve coughs.",
+    "Contains bitter compounds that aid digestion."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Spanish Ice Plant",
+  bota: "Aizoanthemum hispanicum",
+  medB: [
+    "Succulent leaves are traditionally applied to minor burns.",
+    "Used as a soothing poultice.",
+    "Limited medicinal documentation."
+  ],
+  family: "Aizoaceae"
+},
+{
+  common: "Yellow Stonecrop",
+  bota: "Phedimus aizoon",
+  medB: [
+    "Traditionally applied to cuts and burns.",
+    "Used to reduce skin inflammation.",
+    "Contains antioxidant flavonoids."
+  ],
+  family: "Crassulaceae"
+},
+{
+  common: "Two-row Stonecrop",
+  bota: "Phedimus spurius",
+  medB: [
+    "Traditionally used for wound healing.",
+    "Applied externally to skin irritation.",
+    "Contains antioxidant phytochemicals."
+  ],
+  family: "Crassulaceae"
+},
+{
+  common: "Tuber Sword Fern",
+  bota: "Nephrolepis cordifolia",
+  medB: [
+    "Traditionally used to reduce fever.",
+    "Applied to cuts and wounds.",
+    "Used in Asian herbal medicine."
+  ],
+  family: "Nephrolepidaceae"
+},
+{
+  common: "Mandacaru Cactus",
+  bota: "Cereus jamacaru",
+  medB: [
+    "Traditionally used as a diuretic.",
+    "Fruit is consumed for hydration.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Cactaceae"
+},
+{
+  common: "Blue Jelly Bean Plant",
+  bota: "Sedum pachyphyllum",
+  medB: [
+    "Traditionally applied to minor skin irritation.",
+    "Succulent leaves soothe burns.",
+    "Limited medicinal evidence."
+  ],
+  family: "Crassulaceae"
+},
+{
+  common: "Tree Stonecrop",
+  bota: "Sedum dendroideum",
+  medB: [
+    "Traditionally used for eye irritation.",
+    "Applied to inflamed skin.",
+    "Contains anti-inflammatory compounds."
+  ],
+  family: "Crassulaceae"
+},
+{
+  common: "Chinese Tulip Tree",
+  bota: "Liriodendron chinensis",
+  medB: [
+    "Bark is traditionally used for fever.",
+    "Contains antioxidant phytochemicals.",
+    "Limited medicinal research."
+  ],
+  family: "Magnoliaceae"
+},
+{
+  common: "Rock Campion",
+  bota: "Atocion rupestre",
+  medB: [
+    "Traditional medicinal use is limited.",
+    "Occasionally used in local herbal remedies.",
+    "Contains natural antioxidants."
+  ],
+  family: "Caryophyllaceae"
+},
+{
+  common: "Signet Marigold",
+  bota: "Tagetes tenuifolia",
+  medB: [
+    "Leaves aid digestion.",
+    "Contains antimicrobial essential oils.",
+    "Used as a culinary medicinal herb."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Ground Elder",
+  bota: "Aegopodium podagraria",
+  medB: [
+    "Traditionally used to relieve gout.",
+    "Acts as a mild diuretic.",
+    "Leaves are eaten as a nutritious vegetable."
+  ],
+  family: "Apiaceae"
+},
+{
+  common: "Australian Blackwood",
+  bota: "Acacia melanoxylon",
+  medB: [
+    "Bark is traditionally used as an astringent.",
+    "Applied to wounds.",
+    "Contains antimicrobial tannins."
+  ],
+  family: "Fabaceae"
+},
+{
+  common: "Golden Wreath Wattle",
+  bota: "Acacia saligna",
+  medB: [
+    "Traditionally used for skin infections.",
+    "Bark possesses astringent properties.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Fabaceae"
+},
+{
+  common: "Tufted Hair Grass",
+  bota: "Patzkea paniculata",
+  medB: [
+    "Primarily used as forage.",
+    "Very limited medicinal use.",
+    "Contains beneficial plant compounds."
+  ],
+  family: "Poaceae"
+},
+{
+  common: "Russian Sage",
+  bota: "Perovskia abrotanoides",
+  medB: [
+    "Traditionally used for colds.",
+    "Contains aromatic essential oils.",
+    "Applied for digestive disorders."
+  ],
+  family: "Lamiaceae"
+},
+{
+  common: "Western Bee Orchid",
+  bota: "Ophrys occidentalis",
+  medB: [
+    "No documented medicinal use.",
+    "Protected orchid species.",
+    "Important for pollinator ecology."
+  ],
+  family: "Orchidaceae"
+},
+{
+  common: "American Burnweed",
+  bota: "Erechtites hieraciifolius",
+  medB: [
+    "Traditionally applied to cuts.",
+    "Used for treating skin irritation.",
+    "Contains anti-inflammatory compounds."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Feathertop Grass",
+  bota: "Cenchrus longisetus",
+  medB: [
+    "Primarily cultivated as an ornamental.",
+    "Limited medicinal documentation.",
+    "Contains antioxidant phytochemicals."
+  ],
+  family: "Poaceae"
+},
+{
+  common: "Patagonian Beech",
+  bota: "Nothofagus obliqua",
+  medB: [
+    "Bark is traditionally used as an astringent.",
+    "Applied to wounds.",
+    "Contains tannins with antimicrobial activity."
+  ],
+  family: "Nothofagaceae"
+},
+{
+  common: "Field Marigold",
+  bota: "Calendula arvensis",
+  medB: [
+    "Traditionally applied to cuts and burns.",
+    "Supports wound healing.",
+    "Contains anti-inflammatory flavonoids."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Wild Safflower",
+  bota: "Carthamus carduncellus",
+  medB: [
+    "Traditionally used for improving circulation.",
+    "Contains antioxidant compounds.",
+    "Limited medicinal studies."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Gentle Safflower",
+  bota: "Carthamus mitissimus",
+  medB: [
+    "Traditionally used in Mediterranean herbal medicine.",
+    "Contains antioxidant phytochemicals.",
+    "Limited medicinal evidence."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Golden Chervil",
+  bota: "Chaerophyllum aureum",
+  medB: [
+    "Traditionally used as a digestive herb.",
+    "Acts as a mild carminative.",
+    "Contains aromatic compounds."
+  ],
+  family: "Apiaceae"
+},
+{
+  common: "Hairy Chervil",
+  bota: "Chaerophyllum hirsutum",
+  medB: [
+    "Traditionally used for stomach discomfort.",
+    "Contains aromatic oils.",
+    "Limited medicinal evidence."
+  ],
+  family: "Apiaceae"
+},
+{
+  common: "Villars' Chervil",
+  bota: "Chaerophyllum villarsii",
+  medB: [
+    "Traditional medicinal use is poorly documented.",
+    "Occasionally used in alpine herbal remedies.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Apiaceae"
+},
+{
+  common: "Grey Thistle",
+  bota: "Cirsium alsophilum",
+  medB: [
+    "Young shoots were traditionally eaten.",
+    "Contains antioxidant phytochemicals.",
+    "Limited medicinal use."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Grey Marsh Thistle",
+  bota: "Cirsium canum",
+  medB: [
+    "Traditionally used for digestive disorders.",
+    "Applied to minor wounds.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Meadow Thistle",
+  bota: "Cirsium dissectum",
+  medB: [
+    "Young leaves have been consumed as wild greens.",
+    "Traditionally used for inflammation.",
+    "Limited medicinal documentation."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Woolly Thistle",
+  bota: "Cirsium eriophorum",
+  medB: [
+    "Traditionally applied to skin wounds.",
+    "Contains antioxidant phytochemicals.",
+    "Limited scientific evidence."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Yellow Thistle",
+  bota: "Cirsium erisithales",
+  medB: [
+    "Young shoots were traditionally eaten.",
+    "Applied in folk medicine for minor wounds.",
+    "Contains antioxidant phytochemicals."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Fierce Thistle",
+  bota: "Cirsium ferox",
+  medB: [
+    "Traditionally used for skin inflammation.",
+    "Applied externally to cuts.",
+    "Limited medicinal documentation."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Tuberous Thistle",
+  bota: "Cirsium filipendulum",
+  medB: [
+    "Traditionally used as a digestive herb.",
+    "Young leaves were consumed as wild greens.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Smooth Thistle",
+  bota: "Cirsium glabrum",
+  medB: [
+    "Traditionally used for minor wounds.",
+    "Contains beneficial flavonoids.",
+    "Limited medicinal evidence."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Melancholy Thistle",
+  bota: "Cirsium heterophyllum",
+  medB: [
+    "Young shoots are edible.",
+    "Traditionally applied to skin irritation.",
+    "Contains antioxidant phytochemicals."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Corsican Thistle",
+  bota: "Cirsium morisianum",
+  medB: [
+    "Limited medicinal documentation.",
+    "Used in local folk remedies.",
+    "Contains natural antioxidants."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Cabbage Thistle",
+  bota: "Cirsium oleraceum",
+  medB: [
+    "Young leaves were traditionally eaten.",
+    "Used for digestive wellness.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Brook Thistle",
+  bota: "Cirsium rivulare",
+  medB: [
+    "Traditionally applied to minor wounds.",
+    "Contains antioxidant phytochemicals.",
+    "Limited medicinal evidence."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Tuberous Thistle",
+  bota: "Cirsium tuberosum",
+  medB: [
+    "Traditionally used in herbal medicine.",
+    "Young shoots are edible.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Asteraceae"
+},
+{
+  common: "Large-flowered Collomia",
+  bota: "Collomia grandiflora",
+  medB: [
+    "Traditional medicinal use is limited.",
+    "Occasionally used in Native American herbal practices.",
+    "Contains antioxidant compounds."
+  ],
+  family: "Polemoniaceae"
+},
+{
+  common: "Giant Pumpkin",
+  bota: "Cucurbita maxima",
+  medB: [
+    "Seeds support prostate health.",
+    "Rich in zinc and antioxidants.",
+    "Traditionally used against intestinal worms."
+  ],
+  family: "Cucurbitaceae"
+},
+{
+  common: "Ivy-leaved Toadflax",
+  bota: "Cymbalaria aequitriloba",
+  medB: [
+    "Traditionally used as a mild diuretic.",
+    "Applied to skin irritation.",
+    "Limited medicinal studies."
+  ],
+  family: "Plantaginaceae"
+},
+{
+  common: "Corsican Ivy",
+  bota: "Cymbalaria hepaticifolia",
+  medB: [
+    "Traditional medicinal use is poorly documented.",
+    "Contains antioxidant compounds.",
+    "Primarily an ornamental species."
+  ],
+  family: "Plantaginaceae"
+},
+{
+  common: "Maltese Mushroom",
+  bota: "Cytinus hypocistis",
+  medB: [
+    "Traditionally used for diarrhea.",
+    "Possesses strong astringent properties.",
+    "Rich in tannins."
+  ],
+  family: "Cytinaceae"
+},
+{
+  common: "Red Cytinus",
+  bota: "Cytinus ruber",
+  medB: [
+    "Traditionally used as an astringent.",
+    "Applied for digestive disorders.",
+    "Contains antioxidant polyphenols."
+  ],
+  family: "Cytinaceae"
+},
+{
+  common: "Alpine Daphne",
+  bota: "Daphne alpina",
+  medB: [
+    "Historically used in folk medicine.",
+    "Contains toxic diterpenes.",
+    "Not recommended for self-medication."
+  ],
+  family: "Thymelaeaceae"
+},
+{
+  common: "Garland Flower",
+  bota: "Daphne cneorum",
+  medB: [
+    "Traditional medicinal use is limited.",
+    "Contains toxic compounds.",
+    "Primarily cultivated as an ornamental."
+  ],
+  family: "Thymelaeaceae"
+},
+{
+  common: "February Daphne",
+  bota: "Daphne mezereum",
+  medB: [
+    "Historically used externally for rheumatism.",
+    "Highly poisonous if ingested.",
+    "Contains potent diterpenes."
+  ],
+  family: "Thymelaeaceae"
+},
+{
+  common: "Garland Daphne",
+  bota: "Daphne striata",
+  medB: [
+    "Limited medicinal documentation.",
+    "Contains bioactive diterpenes.",
+    "Primarily valued as an alpine shrub."
+  ],
+  family: "Thymelaeaceae"
+},
+{
+  common: "Livingstone Daisy",
+  bota: "Dorotheanthus bellidiformis",
+  medB: [
+    "Succulent leaves soothe minor skin irritation.",
+    "Contains antioxidant pigments.",
+    "Primarily cultivated ornamentally."
+  ],
+  family: "Aizoaceae"
+},
+{
+  common: "Mountain Avens",
+  bota: "Dryas octopetala",
+  medB: [
+    "Traditionally used for digestive complaints.",
+    "Acts as a mild astringent.",
+    "Contains antioxidant tannins."
+  ],
+  family: "Rosaceae"
+},
+{
+  common: "Narrow Buckler Fern",
+  bota: "Dryopteris carthusiana",
+  medB: [
+    "Rhizomes were historically used against intestinal worms.",
+    "Traditional European herbal remedy.",
+    "Use is discouraged today due to toxicity concerns."
+  ],
+  family: "Dryopteridaceae"
+},
+{
+  common: "Crested Buckler Fern",
+  bota: "Dryopteris cristata",
+  medB: [
+    "Traditionally used as an anthelmintic.",
+    "Historical use in folk medicine.",
+    "Limited modern medicinal use."
+  ],
+  family: "Dryopteridaceae"
+},
+{
+  common: "Broad Buckler Fern",
+  bota: "Dryopteris dilatata",
+  medB: [
+    "Rhizomes were historically used in herbal medicine.",
+    "Traditionally used for intestinal parasites.",
+    "Contains biologically active compounds."
+  ],
+  family: "Dryopteridaceae"
+},
+{
+  common: "Spreading Wood Fern",
+  bota: "Dryopteris expansa",
+  medB: [
+    "Traditional medicinal use is limited.",
+    "Historically used for digestive ailments.",
+    "Contains fern-derived bioactive compounds."
+  ],
+  family: "Dryopteridaceae"
+},
+{
+  common: "Villars' Wood Fern",
+  bota: "Dryopteris villarii",
+  medB: [
+    "Limited ethnomedicinal evidence.",
+    "Occasionally used in alpine folk remedies.",
+    "Primarily valued botanically."
+  ],
+  family: "Dryopteridaceae"
+},
+{
+  common: "Crowberry",
+  bota: "Empetrum nigrum",
+  medB: [
+    "Berries are rich in antioxidants.",
+    "Traditionally used for urinary disorders.",
+    "Consumed to support general wellness."
+  ],
+  family: "Ericaceae"
+},
+{
+  common: "Dark-red Helleborine",
+  bota: "Epipactis atrorubens",
+  medB: [
+    "Traditional medicinal use is minimal.",
+    "Related orchids were historically used for salep.",
+    "Protected in many regions."
+  ],
+  family: "Orchidaceae"
+},
+{
+  common: "Narrow-lipped Helleborine",
+  bota: "Epipactis leptochila",
+  medB: [
+    "No significant medicinal use documented.",
+    "Important for biodiversity.",
+    "Protected orchid species."
+  ],
+  family: "Orchidaceae"
+},
+{
+  common: "Green-flowered Helleborine",
+  bota: "Epipactis microphylla",
+  medB: [
+    "Traditional medicinal use is poorly documented.",
+    "Primarily conserved as a wild orchid.",
+    "Little pharmacological research exists."
+  ],
+ family: "Orchidaceae"
+}
 ];
 
 module.exports = { data : plantData};

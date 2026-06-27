@@ -18,9 +18,9 @@ async function main() {
 }
 
 const initDB = async () => {
-    await Plant.deleteMany({});
     await Plant.insertMany(pData.data);
     console.log("Data initialized");
+    await mongoose.connection.close();
 };
 
 initDB();
