@@ -10,28 +10,35 @@ function Home() {
     const [result, setResult] = useState(null);
 
     return (
-        <>
         <div className="home">
             <div className="container">
-            <h1 className="heading">🌿 Plant AI</h1>
 
-            <p className="subHeading">
-                Upload a plant image and identify it instantly.
-            </p>
+                {!result ? (
+                    <>
+                        <h1 className="heading">🌿 Plant AI</h1>
 
-            <UploadCard
-                image={image}
-                setImage={setImage}
-                loading={loading}
-                setLoading={setLoading}
-                setResult={setResult}
-            />
+                        <p className="subHeading">
+                            Upload a plant image and identify it instantly.
+                        </p>
 
-            <ResultCard result={result} />
+                        <UploadCard
+                            image={image}
+                            setImage={setImage}
+                            loading={loading}
+                            setLoading={setLoading}
+                            setResult={setResult}
+                        />
+                    </>
+                ) : (
+                    <ResultCard
+                        result={result}
+                        setImage={setImage}
+                        setResult={setResult}
+                    />
+                )}
+
+            </div>
         </div>
-        </div>
-         
-        </>
     );
 }
 

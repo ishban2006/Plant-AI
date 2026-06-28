@@ -11,7 +11,6 @@ const predictPlant = async (req, res) => {
         }
 
         const classId = await predict(req.file);
-
         const plant = await Plant.findOne({
             number: classId
         });

@@ -11,8 +11,7 @@ class Iris(nn.Module):
     def __init__(self, num_classes=1081):
         super(Iris, self).__init__()
         self.num_classes = num_classes
-        self.backbone_weights = models.ConvNeXt_Tiny_Weights.DEFAULT
-        self.backbone_model = models.convnext_tiny(weights=self.backbone_weights)
+        self.backbone_model = models.convnext_tiny(weights=None)
         for param in self.backbone_model.parameters():
             param.requires_grad = False
         in_features = self.backbone_model.classifier[2].in_features

@@ -1,140 +1,189 @@
 .uploadBox{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
     max-width:650px;
     margin:auto;
-    padding:35px;
-    border:2px dashed #2E7D32;
-    border-radius:18px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:25px;
+    margin-bottom: 100px;
+}
+
+.uploadBox h2{
+    color:#2E7D32;
+    margin-bottom:10px;
+    font-size:30px;
+    font-weight:700;
+}
+
+.hint{
+    color:#777;
+    margin-bottom:28px;
+    font-size:15px;
+}
+
+.uploadLabel{
+    display:block;
+    padding:45px 20px;
+    border:2px dashed #81C784;
+    border-radius:16px;
+    color:#2E7D32;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.uploadLabel:hover{
+    border-color:#2E7D32;
+    background:#F8FFF8;
 }
 
 .uploadInput{
     display:none;
 }
 
-.uploadLabel{
-    display:inline-block;
-    background:#2E7D32;
-    color:white;
-    padding:14px 30px;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:18px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.uploadLabel:hover{
-    background:#1B5E20;
-}
-
-.uploadBox:hover{
-    border-color:#2E7D32;
-}
-
 .preview{
-    width:320px;
-    height:320px;
+    width:100%;
+    max-width:450px;
+    max-height:450px;
     object-fit:cover;
     border-radius:16px;
-    border:2px solid #ddd;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    border:2px solid #E5E7EB;
+    margin:0 auto 25px;
+    display:block;
 }
 
 .imageActions{
     display:flex;
-    gap:30px;
     justify-content:center;
-    margin-top:10px;
+    gap:15px;
+    margin-bottom:28px;
+    flex-wrap:wrap;
+}
+
+.changeBtn,
+.removeBtn{
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.changeBtn{
+    background:#E8F5E9;
+    color:#2E7D32;
+}
+
+.changeBtn:hover{
+    background:#C8E6C9;
 }
 
 .removeBtn{
-    padding:10px 20px;
-    border:none;
-    border-radius:8px;
-    background:#d32f2f;
-    color:white;
-    cursor:pointer;
+    background:#FDECEC;
+    color:#D32F2F;
 }
 
 .removeBtn:hover{
-    background:#b71c1c;
+    background:#F8D7DA;
 }
 
 .identifyBtn{
-    width:250px;
-    padding:16px;
+    width:100%;
     border:none;
+    background:#2E7D32;
+    color:#fff;
+    padding:16px;
     border-radius:12px;
-    font-size:20px;
-    font-weight:bold;
-    background:linear-gradient(90deg,#2E7D32,#43A047);
-    color:white;
+    font-size:18px;
+    font-weight:600;
     cursor:pointer;
+    transition:.3s;
 }
 
-.identifyBtn:hover{
+.identifyBtn:hover:not(:disabled){
     background:#1B5E20;
     transform:translateY(-2px);
 }
 
 .identifyBtn:disabled{
-    background:gray;
+    background:#9E9E9E;
     cursor:not-allowed;
-}
-
-.hint{
-    color:#666;
-    margin-top:-15px;
-    margin-bottom:10px;
-}
-
-.imageInfo{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    margin-bottom:20px;
-}
-
-.imageInfo h3{
-    color:#2E7D32;
-}
-
-.imageInfo p{
-    color:#666;
-}
-
-.changeBtn{
-    background:#444;
-    color:white;
-    padding:10px 20px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-.changeBtn:hover {
-    opacity: 0.8;
+    transform:none;
 }
 
 @media(max-width:768px){
+
     .uploadBox{
-        padding:20px;
+        padding:25px;
     }
 
-    .preview{
-    width:100%;
-    height:260px;
+    .uploadBox h2{
+        font-size:26px;
     }
 
-    .identifyBtn{
-    width:100%;
+    .hint{
+        font-size:14px;
     }
 
     .uploadLabel{
-    width:100%;
-    text-align:center;
+        padding:35px 15px;
+        font-size:16px;
+    }
+
+    .preview{
+        max-width:100%;
+    }
+
+    .imageActions{
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+    }
+
+    .changeBtn,
+    .removeBtn{
+        width:100%;
+        text-align:center;
+    }
+
+    .identifyBtn{
+        font-size:17px;
+        padding:15px;
+    }
+}
+
+@media(max-width:480px){
+    .uploadBox{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .uploadBox h2{
+        font-size:22px;
+    }
+
+    .hint{
+        margin-bottom:20px;
+        font-size:13px;
+    }
+
+    .uploadLabel{
+        padding:28px 12px;
+        font-size:15px;
+    }
+
+    .changeBtn,
+    .removeBtn{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .identifyBtn{
+        font-size:16px;
+        padding:14px;
     }
 }

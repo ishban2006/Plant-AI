@@ -4,7 +4,8 @@ const atlasURL = process.env.MONGO_ATLAS_URL;
 
 module.exports.configDB = async () => {
     try {
-        await mongoose.connect(mongoURL);
+        await mongoose.connect(atlasURL);
+        console.log("Connected DB:", mongoose.connection.name);
         console.log("Connected to Database");
     } catch (err) {
         console.log(err);

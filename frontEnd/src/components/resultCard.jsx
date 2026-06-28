@@ -1,39 +1,57 @@
 import "../styles/result.css";
 
-export default function ResultCard({ result }) {
+export default function ResultCard({
+    result,
+    setImage,
+    setResult,
+}) {
     if (!result) return null;
+
+    function identifyAnother() {
+        setImage(null);
+        setResult(null);
+    }
 
     return (
         <div className="resultCard">
 
-            <div className="success">
-                🌿 Plant Identified Successfully
+            <h1 className="plantName">
+                🌿 {result.common}
+            </h1>
+
+            <p className="botanicalName">
+                {result.bota}
+            </p>
+
+            <div className="divider"></div>
+
+            <div className="resultRow">
+                <span className="label">Family</span>
+                <span className="value">{result.family}</span>
             </div>
 
-            <div className="infoSection">
-                <h4>Common Name</h4>
-                <p>{result.common}</p>
-            </div>
+            <div className="divider"></div>
 
-            <div className="infoSection">
-                <h4>Botanical Name</h4>
-                <p className="botanical">{result.bota}</p>
-            </div>
+            <div className="benefitSection">
 
-            <div className="infoSection">
-                <h4>Family</h4>
-                <p>{result.family}</p>
-            </div>
-
-            <div className="infoSection">
-                <h4>Medicinal Benefits</h4>
+                <h3>Medicinal Benefits</h3>
 
                 <ul className="benefits">
                     {result.medB.map((benefit, index) => (
-                        <li key={index}>{benefit}</li>
+                        <li key={index}>
+                            {benefit}
+                        </li>
                     ))}
                 </ul>
+
             </div>
+
+            <button
+                className="newPlantBtn"
+                onClick={identifyAnother}
+            >
+                🌱 Identify Another Plant
+            </button>
 
         </div>
     );

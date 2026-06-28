@@ -1,61 +1,92 @@
 .resultCard{
-    margin-top:35px;
     background:#fff;
     border-radius:18px;
-    padding:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    text-align:left;
-    animation:fadeIn .4s ease;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    max-width:700px;
+    margin:0 auto;
+    animation:fadeIn .3s ease;
 }
 
-.success{
-    background:#E8F5E9;
-    color:#2E7D32;
-    border:1px solid #81C784;
-    padding:14px;
-    border-radius:12px;
+.plantName{
     text-align:center;
-    font-weight:600;
-    font-size:20px;
-    margin-bottom:28px;
-}
-
-.infoSection{
-    margin-bottom:24px;
-}
-
-.infoSection h4{
-    margin:0 0 8px;
     color:#2E7D32;
-    font-size:17px;
-}
-
-.infoSection p{
+    font-size:34px;
     margin:0;
-    color:#333;
-    font-size:18px;
-    line-height:1.6;
 }
 
-.botanical{
+.botanicalName{
+    text-align:center;
+    color:#666;
+    font-size:19px;
     font-style:italic;
+    margin:10px 0 30px;
+}
+
+.divider{
+    height:1px;
+    background:#ECECEC;
+    margin:25px 0;
+}
+
+.resultRow{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.label{
+    font-size:17px;
+    color:#666;
+    font-weight:600;
+}
+
+.value{
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+}
+
+.benefitSection h3{
+    color:#2E7D32;
+    margin-bottom:18px;
+    font-size:22px;
 }
 
 .benefits{
-    margin:12px 0 0;
     padding-left:22px;
+    margin:0;
 }
 
 .benefits li{
     margin-bottom:12px;
-    line-height:1.7;
     color:#444;
+    line-height:1.8;
+}
+
+.newPlantBtn{
+    width:100%;
+    margin-top:35px;
+    border:none;
+    border-radius:12px;
+    background:#2E7D32;
+    color:#fff;
+    padding:16px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newPlantBtn:hover{
+    background:#1B5E20;
+    transform:translateY(-2px);
 }
 
 @keyframes fadeIn{
     from{
         opacity:0;
-        transform:translateY(15px);
+        transform:translateY(12px);
     }
 
     to{
@@ -64,57 +95,59 @@
     }
 }
 
-/* ---------- Responsive ---------- */
-
-@media (max-width:768px){
-
+@media(max-width:768px){
     .resultCard{
-        padding:22px;
+        padding:25px;
     }
 
-    .success{
-        font-size:18px;
+    .plantName{
+        font-size:28px;
     }
 
-    .infoSection h4{
+    .botanicalName{
+        font-size:17px;
+    }
+
+    .resultRow{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .label,
+    .value{
         font-size:16px;
     }
 
-    .infoSection p{
+    .benefitSection h3{
+        font-size:20px;
+    }
+
+    .newPlantBtn{
         font-size:16px;
+    }
+}
+
+@media(max-width:480px){
+    .resultCard{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .plantName{
+        font-size:24px;
+    }
+
+    .botanicalName{
+        font-size:15px;
     }
 
     .benefits li{
         font-size:15px;
     }
 
-}
-
-@media (max-width:480px){
-
-    .resultCard{
-        padding:18px;
-    }
-
-    .success{
-        font-size:17px;
-        padding:12px;
-    }
-
-    .infoSection{
-        margin-bottom:18px;
-    }
-
-    .infoSection h4{
+    .newPlantBtn{
+        padding:14px;
         font-size:15px;
     }
-
-    .infoSection p{
-        font-size:15px;
-    }
-
-    .benefits{
-        padding-left:18px;
-    }
-
 }

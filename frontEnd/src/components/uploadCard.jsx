@@ -1,19 +1,27 @@
 import "../styles/upload.css";
 import axios from "axios";
 
-export default function UploadCard({ image, setImage, loading, setLoading, setResult }) {
+export default function UploadCard({
+    image,
+    setImage,
+    loading,
+    setLoading,
+    setResult,
+}) {
+
     function handleImage(e) {
         const file = e.target.files[0];
-        if(file){
+
+        if (file) {
             setImage(file);
         }
     }
 
-    const removeImage = () => {
+    function removeImage() {
         setImage(null);
-    };
+    }
 
-    const identifyPlant = async () => {
+    async function identifyPlant() {
         if (!image) return;
 
         try {
@@ -31,6 +39,7 @@ export default function UploadCard({ image, setImage, loading, setLoading, setRe
                     },
                 }
             );
+
             setResult(response.data.plant);
 
         } catch (err) {
@@ -39,7 +48,7 @@ export default function UploadCard({ image, setImage, loading, setLoading, setRe
         } finally {
             setLoading(false);
         }
-    };
+    }
 
     const preview = image ? URL.createObjectURL(image) : null;
 
@@ -47,38 +56,67 @@ export default function UploadCard({ image, setImage, loading, setLoading, setRe
         <div className="uploadBox">
 
             <h2>Upload Plant Image</h2>
+
             <p className="hint">
-            Supported formats: JPG • PNG • JPEG
+                Supported formats: JPG • PNG • JPEG
             </p>
 
-            {!image && (
-                <label htmlFor="plantImage" className="uploadLabel">
-                    Click here to upload a plant image
-                </label>
-            )}
-            <input id="plantImage" className="uploadInput" type="file" accept="image/*" onChange={handleImage} />
-            
-            {preview && (
+            {!image ? (
                 <>
-                    <img className="preview" alt="Plant Image" src={preview} />
+                    <label
+                        htmlFor="plantImage"
+                        className="uploadLabel"
+                    >
+                        Click here to upload a plant image
+                    </label>
 
-                    <div className="imageInfo">
-                        <h3>✅ Image Selected</h3>
-                        <p>{image.name}</p>
+                    <input
+                        id="plantImage"
+                        className="uploadInput"
+                        type="file"
+                        accept="image/*"
+                        onChange={handleImage}
+                    />
+                </>
+            ) : (
+                <>
+                    <img
+                        className="preview"
+                        src={preview}
+                        alt="Plant"
+                    />
 
-                        <div className="imageActions">
-                            <label htmlFor="plantImage" className="changeBtn">
-                                Change Image
-                            </label>
+                    <div className="imageActions">
 
-                            <button className="removeBtn" onClick={removeImage}>
-                                Remove
-                            </button>
-                        </div>
+                        <label
+                            htmlFor="plantImage"
+                            className="changeBtn"
+                        >
+                            Change Image
+                        </label>
+
+                        <input
+                            id="plantImage"
+                            className="uploadInput"
+                            type="file"
+                            accept="image/*"
+                            onChange={handleImage}
+                        />
+
+                        <button
+                            className="removeBtn"
+                            onClick={removeImage}
+                        >
+                            Remove
+                        </button>
 
                     </div>
 
-                    <button className="identifyBtn" disabled={loading} onClick={identifyPlant}>
+                    <button
+                        className="identifyBtn"
+                        onClick={identifyPlant}
+                        disabled={loading}
+                    >
                         {loading ? "Analyzing..." : "Identify Plant"}
                     </button>
                 </>
