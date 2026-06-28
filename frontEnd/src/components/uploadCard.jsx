@@ -1,4 +1,5 @@
 import "../styles/upload.css";
+import axios from "axios";
 
 export default function UploadCard({ image, setImage, loading, setLoading, setResult }) {
     function handleImage(e) {
@@ -10,6 +11,34 @@ export default function UploadCard({ image, setImage, loading, setLoading, setRe
 
     const removeImage = () => {
         setImage(null);
+    };
+
+    const identifyPlant = async () => {
+        if (!image) return;
+
+        try {
+            setLoading(true);
+
+            const formData = new FormData();
+            formData.append("file", image);
+
+            const response = await axios.post(
+                "http://localhost:8080/predict",
+                formData,
+                {
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                    },
+                }
+            );
+            setResult(response.data.plant);
+
+        } catch (err) {
+            console.error(err);
+            alert("Unable to identify plant.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     const preview = image ? URL.createObjectURL(image) : null;
@@ -49,7 +78,7 @@ export default function UploadCard({ image, setImage, loading, setLoading, setRe
 
                     </div>
 
-                    <button className="identifyBtn" disabled={loading}>
+                    <button className="identifyBtn" disabled={loading} onClick={identifyPlant}>
                         {loading ? "Analyzing..." : "Identify Plant"}
                     </button>
                 </>

@@ -21,12 +21,10 @@ main().catch((err) => {
 const initDB = async () => {
     const plants = pData.data.map((plant, index) => ({
         ...plant,
-        number: index + 520,
+        number: index + 828,
     }));
 
     await Plant.insertMany(plants);
-
     console.log("Data initialized");
-
     await mongoose.connection.close();
 };

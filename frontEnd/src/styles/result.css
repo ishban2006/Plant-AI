@@ -1,0 +1,120 @@
+.resultCard{
+    margin-top:35px;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:left;
+    animation:fadeIn .4s ease;
+}
+
+.success{
+    background:#E8F5E9;
+    color:#2E7D32;
+    border:1px solid #81C784;
+    padding:14px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:28px;
+}
+
+.infoSection{
+    margin-bottom:24px;
+}
+
+.infoSection h4{
+    margin:0 0 8px;
+    color:#2E7D32;
+    font-size:17px;
+}
+
+.infoSection p{
+    margin:0;
+    color:#333;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.botanical{
+    font-style:italic;
+}
+
+.benefits{
+    margin:12px 0 0;
+    padding-left:22px;
+}
+
+.benefits li{
+    margin-bottom:12px;
+    line-height:1.7;
+    color:#444;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:768px){
+
+    .resultCard{
+        padding:22px;
+    }
+
+    .success{
+        font-size:18px;
+    }
+
+    .infoSection h4{
+        font-size:16px;
+    }
+
+    .infoSection p{
+        font-size:16px;
+    }
+
+    .benefits li{
+        font-size:15px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .resultCard{
+        padding:18px;
+    }
+
+    .success{
+        font-size:17px;
+        padding:12px;
+    }
+
+    .infoSection{
+        margin-bottom:18px;
+    }
+
+    .infoSection h4{
+        font-size:15px;
+    }
+
+    .infoSection p{
+        font-size:15px;
+    }
+
+    .benefits{
+        padding-left:18px;
+    }
+
+}

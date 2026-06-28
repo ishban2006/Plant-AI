@@ -8,6 +8,8 @@ const app = express();
 
 const {dispError} = require("./config/middleware");
 
+const predictRoute = require("./expressRoutes/predict");
+
 app.use(cors({
     origin: [
         "http://localhost:5173",
@@ -18,6 +20,7 @@ app.use(cors({
 app.use(express.urlencoded({extended : true}));     //To parse data of an id
 
 app.use(express.json());
+app.use("/predict", predictRoute);
 
 app.get("/", (req, res) => {
     res.send("BackEnd Working!!!");
