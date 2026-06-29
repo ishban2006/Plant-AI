@@ -31,7 +31,7 @@ export default function UploadCard({
             formData.append("file", image);
 
             const response = await axios.post(
-                "http://localhost:8080/predict",
+                "https://plant-ai-jywm.onrender.com",
                 formData,
                 {
                     headers: {
@@ -63,20 +63,11 @@ export default function UploadCard({
 
             {!image ? (
                 <>
-                    <label
-                        htmlFor="plantImage"
-                        className="uploadLabel"
-                    >
+                    <label htmlFor="plantImage" className="uploadLabel">
                         Click here to upload a plant image
                     </label>
 
-                    <input
-                        id="plantImage"
-                        className="uploadInput"
-                        type="file"
-                        accept="image/*"
-                        onChange={handleImage}
-                    />
+                    <input id="plantImage" className="uploadInput" type="file" accept="image/*" onChange={handleImage}/>
                 </>
             ) : (
                 <>
